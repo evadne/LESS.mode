@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>/LESS/Attribute state</key>
+	<string>Inside curly brackets.LESS Attributes</string>
+	<key>/LESS/AutodocComment</key>
+	<string>AutodocComment</string>
+	<key>/LESS/LESS Attributes</key>
+	<string>Inside curly brackets.LESS Attributes</string>
+	<key>/LESS/LESS Colors</key>
+	<string>Inside curly brackets.LESS Colors</string>
+	<key>/LESS/LESS Digits</key>
+	<string>Inside curly brackets.LESS Digits</string>
+	<key>/LESS/LESS Keywords</key>
+	<string>Inside curly brackets.LESS Keywords</string>
+	<key>/LESS/Comment</key>
+	<string>Inside curly brackets.Comments in Curly Brackets</string>
+	<key>/LESS/Inside curly brackets</key>
+	<string>Inside curly brackets</string>
+	<key>/LESS/Round bracket</key>
+	<string>/LESS/Round bracket</string>
+	<key>/LESS/SingleString</key>
+	<string>Inside curly brackets.Strings in Curly Brackets</string>
+	<key>/LESS/String</key>
+	<string>Inside curly brackets.Strings in Curly Brackets</string>
+	<key>_Default</key>
+	<string>_Default</string>
+</dict>
+</plist>
