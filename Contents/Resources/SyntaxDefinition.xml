@@ -681,7 +681,7 @@
 					<regex>(\+|\-|\/|\*)</regex>
 				</keywords>
 				<keywords id="LESS Digits" color="#00f" font-style="normal" useforautocomplete="yes">
-				    <regex>(?&lt;![#\d\w])([\d]+[ \t]*(?:px|pt|em|ex|cm|in|mm|pc|%)?)</regex>
+				    <regex>(?&lt;![#\d\w])([\d]+(.\d+)?[ \t]*(?:px|pt|em|ex|cm|in|mm|pc|%)?)</regex>
 				</keywords>
 				<keywords id="LESS Colors" color="#760f15" font-style="normal" useforautocomplete="yes">
 				    <regex>(#[\da-fA-F]{3,6})</regex>
