@@ -25,7 +25,7 @@
 	</symbol>
     
     <symbol id="Classes" image="SymbolC">
-        <regex>(?&lt;=[\n\r]|^)[\t ]*(\.[\w\d\s,\-_\*>:\(\)\+\[\]="~\$\^#\. ]*)(?=(\s*\{)|(\s*/\*.*\*/\s*\{))</regex>
+        <regex>(?&lt;=[\n\r]|^)[\t ]*(\.[\w\d\s,\-_\*>:\(\)\+\[\]="~\$\^#\. ]*)(?=(\s*\{)|(\s*/\*.*\*/\s*\{)|(\s*\(.+\)\s*\{))</regex>
         <postprocess>
             <find>[\n\r]</find>
             <replace> </replace>
