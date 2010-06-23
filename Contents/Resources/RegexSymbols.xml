@@ -21,7 +21,16 @@
     </symbol>
 
 	<symbol id="Variables" image="SymbolV">
-		<regex>(?&lt;=[\n\r]|^)[\t ]*(@[\w\-]+\b)</regex>
+
+		<regex>(?&lt;=[\n\r]|^)[\t ]*(@[\w\-]+\b):</regex>
+		
+		<postprocess>
+	
+			<find>:</find>
+			<replace></replace>
+	
+		</postprocess>
+
 	</symbol>
     
     <symbol id="Classes" image="SymbolC">
