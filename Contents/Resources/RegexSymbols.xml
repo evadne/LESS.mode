@@ -23,10 +23,12 @@
 
 	<symbol id="Variables" image="SymbolV">
 
-		<regex>(?&lt;=[\n\r]|^)[\t ]*(@[\w\-]+\b):</regex>
+		<regex>(?&lt;=[\n\r]|^)([\t ]*@[\w\-]+\b):</regex>
 		
 		<postprocess>
-	
+
+			<find>[ \t]</find>
+			<replace>  </replace>	
 			<find>:</find>
 			<replace></replace>
 	
