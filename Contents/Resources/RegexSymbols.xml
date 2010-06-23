@@ -1,24 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE syntax SYSTEM "symbol.dtd">
+
+
+
+
 <symbols>
 
-    <blocks>
-        <beginregex>{</beginregex>
-        <endregex>}</endregex>
-    </blocks>
-    
-    <!-- STUDIO - added support for comments after delarations before { -->
-    <symbol id="Tags" image="SymbolT">
-        <regex>(?&lt;=[\n\r]|^)[\t ]*([\w\*][\w\d\s,\-_\*>:\(\)\+\[\]="~\$\^#\. ]*)(?=(\s*\{)|(\s*/\*.*\*/\s*\{))</regex>
-        <postprocess>
-            <find>[\n\r]</find>
-            <replace> </replace>
-            <find>[ \t]+</find>
-            <replace> </replace>
-            <find>/\*.*\*/</find>
-            <replace></replace>
-        </postprocess>
-    </symbol>
+
+
+
+
+	<blocks>
+
+		<beginregex>{</beginregex>
+		<endregex>}</endregex>
+
+	</blocks>
+
+
+
+
 
 	<symbol id="Variables" image="SymbolV">
 
@@ -32,34 +33,86 @@
 		</postprocess>
 
 	</symbol>
-    
-    <symbol id="Classes" image="SymbolC">
-        <regex>(?&lt;=[\n\r]|^)[\t ]*(\.[\w\d\s,\-_\*>:\(\)\+\[\]="~\$\^#\. ]*)(?=(\s*\{)|(\s*/\*.*\*/\s*\{)|(\s*\(.+\)\s*\{))</regex>
-        <postprocess>
-            <find>[\n\r]</find>
-            <replace> </replace>
-            <find>[ \t]+</find>
-            <replace> </replace>
-            <find>/\*.*\*/</find>
-            <replace></replace>
-        </postprocess>
-    </symbol>
-    
-    <symbol id="IDs" image="SymbolID">
-        <regex>(?&lt;=[\n\r]|^)[\t ]*(#[\w\d\s,\-_\*>:\(\)\+\[\]="~\$\^#\. ]*)(?=(\s*\{)|(\s*/\*.*\*/\s*\{))</regex>
-        <postprocess>
-            <find>[\n\r]</find>
-            <replace> </replace>
-            <find>[ \t]+</find>
-            <replace> </replace>
-            <find>/\*.*\*/</find>
-            <replace></replace>
-        </postprocess>
-    </symbol>
 
-	<!-- STUDIO changed to CSS style comments, and changed image to SymbolMark -->
-    <symbol id="Pragma marks" font-weight="normal" font-style="normal" image="SymbolMark" indentation="0" ignoreblocks="no" show-in-comments="yes">
-        <regex>^/[/\*]\s+!([^\n]+)$</regex>
-    </symbol>
+
+
+
+
+	<symbol id="Tags" image="SymbolT">
+
+		<regex>(?&lt;=[\n\r]|^)([\t ]*[\w\*][\w\d\s,\-_\*>:\(\)\+\[\]="~\$\^#\. ]*)(?=(\s*\{)|(\s*/\*.*\*/\s*\{))</regex>
+
+		<postprocess>
+	
+			<find>[\n\r](\s|\t)+</find>
+			<replace> </replace>
+			<find>[ \t]</find>
+			<replace>  </replace>
+			<find>/\*.*\*/</find>
+			<replace></replace>
+	
+		</postprocess>
+
+	</symbol>
+
+
+
+
+
+	<symbol id="Classes" image="SymbolC">
+	
+		<regex>(?&lt;=[\n\r]|^)([\t ]*\.[\w\d\s,\-_\*>:\(\)\+\[\]="~\$\^#\. ]*)(?=(\s*\{)|(\s*/\*.*\*/\s*\{)|(\s*\(.+\)\s*\{))</regex>
+		
+		<postprocess>
+
+			<find>[\n\r](\s|\t)+</find>
+			<replace> </replace>
+			<find>[ \t]</find>
+			<replace>  </replace>
+			<find>/\*.*\*/</find>
+			<replace></replace>
+
+		</postprocess>
+	
+	</symbol>
+
+
+
+
     
+	<symbol id="IDs" image="SymbolID">
+
+		<regex>(?&lt;=[\n\r]|^)[\t ]*(#[\w\d\s,\-_\*>:\(\)\+\[\]="~\$\^#\. ]*)(?=(\s*\{)|(\s*/\*.*\*/\s*\{))</regex>
+
+		<postprocess>
+	
+			<find>[\n\r](\s|\t)+</find>
+			<replace> </replace>
+			<find>[ \t]</find>
+			<replace>  </replace>
+			<find>/\*.*\*/</find>
+			<replace></replace>
+	
+		</postprocess>
+
+	</symbol>
+
+
+
+
+
+	<symbol id="Pragma marks" font-weight="normal" font-style="normal" image="SymbolMark" indentation="0" ignoreblocks="no" show-in-comments="yes">
+
+		<regex>^/[/\*]\s+!([^\n]+)$</regex>
+
+	</symbol>
+
+
+
+
+
 </symbols>
+
+
+
+
