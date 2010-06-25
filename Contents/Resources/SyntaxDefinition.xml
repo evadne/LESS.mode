@@ -806,7 +806,7 @@
 
 		<keywords id="LESS Colors" color="#760f15" font-style="normal" useforautocomplete="yes">
 
-			<regex>(#[\da-fA-F]{3,6})</regex>
+			<regex>((\#[\da-fA-F]{3,6})|(rgb\(\s*\d{1,3},\s*\d{1,3},\s*\d{1,3}\s*\))|(rgba\(\s*\d{1,3},\s*\d{1,3},\s*\d{1,3},\s*0*\.\d+\s*\)))</regex>
 
 		</keywords>
 
