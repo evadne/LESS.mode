@@ -412,7 +412,7 @@
 
 		<begin>
 
-			<regex>:</regex>
+			<regex>:\ </regex>
 
 		</begin>
 
