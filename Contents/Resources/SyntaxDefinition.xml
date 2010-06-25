@@ -272,7 +272,7 @@
 
 		<keywords id="Mixins" color="#B64444" useforautocomplete="no">
 
-			<regex>(\.[\w\-]+)</regex>
+			<regex>[\n\r]\s*(\.[\w\-]+)</regex>
 
 		</keywords>
 
@@ -282,7 +282,6 @@
 		<state-link state="SingleComment"/>
 		<state-link state="String"/>
 		<state-link state="SingleString"/>
-		<state-link state="Round bracket"/>
 
 	</state>
 		
@@ -348,26 +347,6 @@
 		
 		
 		
-	<state id="Round bracket" type="string" color="#760f15" font-weight="normal" font-style="normal">
-
-		<begin>
-
-			<string>\(</string>
-
-		</begin>
-
-		<end>
-
-			<regex>\)</regex>
-
-		</end>
-
-	</state>
-		
-		
-		
-		
-		
 	<state id="String" type="string" color="#760f15" font-weight="normal" font-style="normal">
 
 		<begin>
@@ -421,6 +400,12 @@
 			<regex>(;|.(?=})|[\n\r])</regex>
 
 		</end>
+		
+		<keywords id="LESS Variables" color="#ba4747" useforautcomplete="no">
+
+			<regex>(@[\w\-]+\b)</regex>
+
+		</keywords>
 
 		<keywords id="LESS Attributes" font-style="normal" color="#9B4400" useforautocomplete="yes">
 
@@ -783,11 +768,7 @@
 		
 		
 		
-		<keywords id="LESS Variables" color="#ba4747" useforautcomplete="no">
-
-			<regex>(@[\w\-]+\b)</regex>
-
-		</keywords>
+		
 
 
 		<keywords id="LESS Operators" color="#4068AB" useforautocomplete="no">
@@ -815,7 +796,6 @@
 		<state-link state="SingleComment"/>
 		<state-link state="String"/>
 		<state-link state="SingleString"/>
-		<state-link state="Round bracket"/>
 
 	</state>
 
