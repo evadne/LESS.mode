@@ -1,3 +1,0 @@
-Changes with Version 1.0
-
-    *) Extended base CSS mode to highlight LESS CSS rules.
