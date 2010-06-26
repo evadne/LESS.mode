@@ -8,11 +8,16 @@
 <syntax><head>
 
 	<name>LESS</name>
-	<!-- The definitions title -->
 	<charsintokens>_0987654321abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ@</charsintokens>
 	<charsincompletion>_0987654321abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ-@</charsincompletion>
 
-</head><states><default id="Base" color="#000" background-color="#fff" font-weight="normal" font-style="normal">
+</head><states>
+
+
+
+
+
+<default id="Base" color="#000" background-color="#fff" font-weight="normal" font-style="normal">
 	
 	<keywords id="LESS Variables" color="#ba4747" useforautcomplete="no">
 	
@@ -26,13 +31,8 @@
 		
 	<state id="Inside curly brackets" color="#000" background-color="#fff" font-weight="normal" font-style="normal">
 
-		<begin>
-			<string>{</string>
-		</begin>
-
-		<end>
-			<regex>}</regex>
-		</end>
+		<begin><string>{</string></begin>
+		<end><string>}</string></end>
 
 		<keywords id="LESS Keywords" color="#88134F" font-style="normal" useforautocomplete="yes">
 
@@ -284,24 +284,15 @@
 		<state-link state="SingleString"/>
 
 	</state>
-		
-		
-		
-		
-		
+
+	
+	
+	
+	
 	<state id="AutodocComment" type="comment" color="#236E25" font-weight="normal" font-style="italic">
 
-		<begin>
-
-			<string>/\*"</string>
-
-		</begin>
-
-		<end>
-
-			<regex>"\*/</regex>
-
-		</end>
+		<begin><string>/\*"</string></begin>
+		<end><regex>"\*/</regex></end>
 
 	</state>
 		
@@ -311,17 +302,8 @@
 		
 	<state id="Comment" type="comment" color="#236E25" font-weight="normal" font-style="italic">
 	
-		<begin>
-
-			<string>/\*</string>
-
-		</begin>
-
-		<end>
-
-			<regex>\*/</regex>
-
-		</end>
+		<begin><string>/\*</string></begin>
+		<end><regex>\*/</regex></end>
 
 	</state>
 		
@@ -331,15 +313,8 @@
 		
 	<state id="SingleComment" type="comment" color="#236E25" font-weight="normal" font-style="italic">
 
-		<begin>
-
-			<regex>//</regex>
-		</begin>
-
-		<end>
-
-			<regex>[\n\r]</regex>
-		</end>
+		<begin><regex>//</regex></begin>
+		<end><regex>[\n\r]</regex></end>
 
 	</state>
 		
@@ -349,17 +324,8 @@
 		
 	<state id="String" type="string" color="#760f15" font-weight="normal" font-style="normal">
 
-		<begin>
-
-			<string>"</string>
-
-		</begin>
-
-		<end>
-
-			<regex>(((?&lt;!\\)(\\\\)*)|^)"</regex>
-
-		</end>
+		<begin><string>"</string></begin>
+		<end><regex>(((?&lt;!\\)(\\\\)*)|^)"</regex></end>
 
 	</state>
 		
@@ -369,17 +335,8 @@
 		
 	<state id="SingleString" type="string" color="#760f15" font-weight="normal" font-style="normal">
 
-		<begin>
-
-			<string>'</string>
-
-		</begin>
-
-		<end>
-
-			<regex>(((?&lt;!\\)(\\\\)*)|^)'</regex>
-
-		</end>
+		<begin><string>'</string></begin>
+		<end><regex>(((?&lt;!\\)(\\\\)*)|^)'</regex></end>
 
 	</state>
 		
@@ -389,17 +346,8 @@
 		
 	<state id="Attribute State" color="#000" background-color="#fff" font-weight="normal" font-style="normal">
 
-		<begin>
-
-			<regex>:\ </regex>
-
-		</begin>
-
-		<end>
-
-			<regex>(;|.(?=})|[\n\r])</regex>
-
-		</end>
+		<begin><regex>(?&lt;!\s):\s</regex></begin>
+		<end><regex>(;|.(?=}))</regex></end>
 		
 		<keywords id="LESS Variables" color="#ba4747" useforautcomplete="no">
 
@@ -761,14 +709,11 @@
 			<regex>(?i)(stretch)</regex>
 			<regex>(?i)(start)</regex>
 			<regex>(?i)(end)</regex>
-
+			
 		</keywords>
 
-		
-		
-		
-		
-		
+
+
 
 
 		<keywords id="LESS Operators" color="#4068AB" useforautocomplete="no">
@@ -780,7 +725,7 @@
 
 		<keywords id="LESS Digits" color="#00f" font-style="normal" useforautocomplete="yes">
 
-			<regex>(?&lt;![#\d\w])([\d]+(.\d+)?[ \t]*(?:px|pt|em|ex|cm|in|mm|pc|%)?)</regex>
+			<regex>(?&lt;![#\d\w])(-?.?[\d]+(\.\d+)?[ \t]*(?:s|px|pt|em|ex|cm|in|mm|pc|%)?)</regex>
 
 		</keywords>
 
@@ -798,7 +743,11 @@
 		<state-link state="SingleString"/>
 
 	</state>
-
+	
+	
+	
+	
+	
 
 
 
