@@ -8,8 +8,8 @@
 <syntax><head>
 
 	<name>LESS</name>
-	<charsintokens>_0987654321abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ@</charsintokens>
-	<charsincompletion>_0987654321abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ-@</charsincompletion>
+	<charsintokens><![CDATA[_0987654321abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ@]]></charsintokens>
+	<charsincompletion><![CDATA[_0987654321abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ-@]]></charsincompletion>
 
 </head><states>
 
