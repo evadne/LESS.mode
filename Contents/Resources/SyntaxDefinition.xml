@@ -339,6 +339,17 @@
 		<end><regex>(((?&lt;!\\)(\\\\)*)|^)'</regex></end>
 
 	</state>
+	
+	
+	
+	
+	
+	<state id="URL" type="string" color="#760f15" font-weight="normal" font-style="normal">
+
+		<begin><string>(?i)(?&lt;=url)\s*\(</string></begin>
+		<end><regex>\)</regex></end>
+
+	</state>
 		
 		
 		
@@ -713,9 +724,6 @@
 		</keywords>
 
 
-
-
-
 		<keywords id="LESS Operators" color="#4068AB" useforautocomplete="no">
 
 			<regex>(\+|\-|\/|\*)</regex>
@@ -725,14 +733,18 @@
 
 		<keywords id="LESS Digits" color="#00f" font-style="normal" useforautocomplete="yes">
 
-			<regex>(?&lt;![#\d\w])(-?.?[\d]+(\.\d+)?[ \t]*(?:s|px|pt|em|ex|cm|in|mm|pc|%)?)</regex>
+			<regex>(?&lt;![#\d\w])((?:(?:-?\.\d+)|(?:-?\d+\.\d+)|(?:-?\d+))(?:s|px|pt|em|ex|cm|in|mm|pc|%)?)</regex>
 
 		</keywords>
-
+		
 
 		<keywords id="LESS Colors" color="#760f15" font-style="normal" useforautocomplete="yes">
 
-			<regex>((\#[\da-fA-F]{3,6})|(rgb\(\s*\d{1,3},\s*\d{1,3},\s*\d{1,3}\s*\))|(rgba\(\s*\d{1,3},\s*\d{1,3},\s*\d{1,3},\s*0*\.\d+\s*\)))</regex>
+			<regex>(?i)(\#[\da-f]{3})</regex>
+			<regex>(?i)(\#[\da-f]{6})</regex>
+						
+			<regex>(rgb\(\s*\d{1,3},\s*\d{1,3},\s*\d{1,3}\s*\))</regex>
+			<regex>(rgba\(\s*\d{1,3},\s*\d{1,3},\s*\d{1,3},\s*0*\.\d+\s*\))</regex>
 
 		</keywords>
 
