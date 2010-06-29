@@ -19,6 +19,10 @@
 
 <default id="Base" color="#000" background-color="#fff" font-weight="normal" font-style="normal">
 	
+
+
+
+
 	<keywords id="LESS Variables" color="#ba4747" useforautcomplete="no">
 	
 		<regex>(@[\w\-]+\b)</regex>
@@ -40,29 +44,18 @@
 			<regex>(?&lt;![\d\w])(?i)(_background)</regex>
 			<regex>(?&lt;![\d\w])(?i)(_filter)</regex>
 			<regex>(?&lt;![\d\w])(?i)(filter)</regex>
-			<regex>(?&lt;![\d\w])(?i)(overflow-x)</regex>
-			<regex>(?&lt;![\d\w])(?i)(overflow-y)</regex>
+			<regex>(?&lt;![\d\w])(?i)(overflow(-x|-y)?)</regex>
 			<!-- END STUDIO -->
 			<regex>(?&lt;![\d\w])(?i)(azimuth)</regex>
-			<regex>(?&lt;![\d\w])(?i)(background-attachment)</regex>
-			<regex>(?&lt;![\d\w])(?i)(background-color)</regex>
-			<regex>(?&lt;![\d\w])(?i)(background-image)</regex>
-			<regex>(?&lt;![\d\w])(?i)(background-position)</regex>
-			<regex>(?&lt;![\d\w])(?i)(background-repeat)</regex>
+
+			<regex>(?&lt;![\d\w])(?i)(background-(attachment|color|image|position|repeat))</regex>
+
+			<regex>(?&lt;![\d\w])(?i)(border-(top|right|bottom|left)-(color|style|width))</regex>
+
 			<regex>(?&lt;![\d\w])(?i)(border-collapse)</regex>
 			<regex>(?&lt;![\d\w])(?i)(border-spacing)</regex>
-			<regex>(?&lt;![\d\w])(?i)(border-top-color)</regex>
-			<regex>(?&lt;![\d\w])(?i)(border-right-color)</regex>
-			<regex>(?&lt;![\d\w])(?i)(border-bottom-color)</regex>
-			<regex>(?&lt;![\d\w])(?i)(border-left-color)</regex>
-			<regex>(?&lt;![\d\w])(?i)(border-top-style)</regex>
-			<regex>(?&lt;![\d\w])(?i)(border-right-style)</regex>
-			<regex>(?&lt;![\d\w])(?i)(border-bottom-style)</regex>
-			<regex>(?&lt;![\d\w])(?i)(border-left-style)</regex>
-			<regex>(?&lt;![\d\w])(?i)(border-top-width)</regex>
-			<regex>(?&lt;![\d\w])(?i)(border-right-width)</regex>
-			<regex>(?&lt;![\d\w])(?i)(border-bottom-width)</regex>
-			<regex>(?&lt;![\d\w])(?i)(border-left-width)</regex>
+			
+
 			<regex>(?&lt;![\d\w])(?i)(bottom)</regex>
 			<regex>(?&lt;![\d\w])(?i)(caption-side)</regex>
 			<regex>(?&lt;![\d\w])(?i)(clear)</regex>
@@ -182,91 +175,7 @@
 			<regex>(?&lt;![\d\w])(?i)(layout-grid-mode)</regex>
 			<regex>(?&lt;![\d\w])(?i)(layout-grid-type)</regex>
 			<regex>(?&lt;![\d\w])(?i)(list-style-type)</regex>
-			<regex>(?&lt;![\d\w])(?i)(-moz-binding)</regex>
-			<regex>(?&lt;![\d\w])(?i)(-moz-border-bottom-colors)</regex>
-			<regex>(?&lt;![\d\w])(?i)(-moz-border-left-colors)</regex>
-			<regex>(?&lt;![\d\w])(?i)(-moz-border-radius)</regex>
-			<regex>(?&lt;![\d\w])(?i)(-moz-border-radius-bottomleft)</regex>
-			<regex>(?&lt;![\d\w])(?i)(-moz-border-radius-bottomright)</regex>
-			<regex>(?&lt;![\d\w])(?i)(-moz-border-radius-topleft)</regex>
-			<regex>(?&lt;![\d\w])(?i)(-moz-border-radius-topright)</regex>
-			<regex>(?&lt;![\d\w])(?i)(-moz-border-right-colors)</regex>
-			<regex>(?&lt;![\d\w])(?i)(-moz-border-top-colors)</regex>
-			<regex>(?&lt;![\d\w])(?i)(-moz-opacity)</regex>
-			<regex>(?&lt;![\d\w])(?i)(-moz-outline)</regex>
-			<regex>(?&lt;![\d\w])(?i)(-moz-outline-color)</regex>
-			<regex>(?&lt;![\d\w])(?i)(-moz-outline-style)</regex>
-			<regex>(?&lt;![\d\w])(?i)(-moz-outline-width)</regex>
-			<regex>(?&lt;![\d\w])(?i)(-moz-user-focus)</regex>
-			<regex>(?&lt;![\d\w])(?i)(-moz-user-input)</regex>
-			<regex>(?&lt;![\d\w])(?i)(-moz-user-modify)</regex>
-			<regex>(?&lt;![\d\w])(?i)(-moz-user-select)</regex>
-			<regex>(?&lt;![\d\w])(?i)(-webkit-appearance)</regex>
-			<regex>(?&lt;![\d\w])(?i)(-webkit-background-clip)</regex>
-			<regex>(?&lt;![\d\w])(?i)(-webkit-background-composite)</regex>
-			<regex>(?&lt;![\d\w])(?i)(-webkit-background-origin)</regex>
-			<regex>(?&lt;![\d\w])(?i)(-webkit-background-size)</regex>
-			<regex>(?&lt;![\d\w])(?i)(-webkit-binding)</regex>
-			<regex>(?&lt;![\d\w])(?i)(-webkit-border-bottom-left-radius)</regex>
-			<regex>(?&lt;![\d\w])(?i)(-webkit-border-bottom-right-radius)</regex>
-			<regex>(?&lt;![\d\w])(?i)(-webkit-border-fit)</regex>
-			<regex>(?&lt;![\d\w])(?i)(-webkit-border-horizontal-spacing)</regex>
-			<regex>(?&lt;![\d\w])(?i)(-webkit-border-image)</regex>
-			<regex>(?&lt;![\d\w])(?i)(-webkit-border-radius)</regex>
-			<regex>(?&lt;![\d\w])(?i)(-webkit-border-top-left-radius)</regex>
-			<regex>(?&lt;![\d\w])(?i)(-webkit-border-top-right-radius)</regex>
-			<regex>(?&lt;![\d\w])(?i)(-webkit-border-vertical-spacing)</regex>
-			<regex>(?&lt;![\d\w])(?i)(-webkit-box-align)</regex>
-			<regex>(?&lt;![\d\w])(?i)(-webkit-box-direction)</regex>
-			<regex>(?&lt;![\d\w])(?i)(-webkit-box-flex)</regex>
-			<regex>(?&lt;![\d\w])(?i)(-webkit-box-flex-group)</regex>
-			<regex>(?&lt;![\d\w])(?i)(-webkit-box-lines)</regex>
-			<regex>(?&lt;![\d\w])(?i)(-webkit-box-ordinal-group)</regex>
-			<regex>(?&lt;![\d\w])(?i)(-webkit-box-orient)</regex>
-			<regex>(?&lt;![\d\w])(?i)(-webkit-box-pack)</regex>
-			<regex>(?&lt;![\d\w])(?i)(-webkit-box-shadow)</regex>
-			<regex>(?&lt;![\d\w])(?i)(-webkit-box-sizing)</regex>
-			<regex>(?&lt;![\d\w])(?i)(-webkit-column-break-after)</regex>
-			<regex>(?&lt;![\d\w])(?i)(-webkit-column-break-before)</regex>
-			<regex>(?&lt;![\d\w])(?i)(-webkit-column-break-inside)</regex>
-			<regex>(?&lt;![\d\w])(?i)(-webkit-column-count)</regex>
-			<regex>(?&lt;![\d\w])(?i)(-webkit-column-gap)</regex>
-			<regex>(?&lt;![\d\w])(?i)(-webkit-column-rule)</regex>
-			<regex>(?&lt;![\d\w])(?i)(-webkit-column-rule-color)</regex>
-			<regex>(?&lt;![\d\w])(?i)(-webkit-column-rule-style)</regex>
-			<regex>(?&lt;![\d\w])(?i)(-webkit-column-rule-width)</regex>
-			<regex>(?&lt;![\d\w])(?i)(-webkit-column-width)</regex>
-			<regex>(?&lt;![\d\w])(?i)(-webkit-columns)</regex>
-			<regex>(?&lt;![\d\w])(?i)(-webkit-dashboard-region)</regex>
-			<regex>(?&lt;![\d\w])(?i)(-webkit-font-size-delta)</regex>
-			<regex>(?&lt;![\d\w])(?i)(-webkit-highlight)</regex>
-			<regex>(?&lt;![\d\w])(?i)(-webkit-line-break)</regex>
-			<regex>(?&lt;![\d\w])(?i)(-webkit-line-clamp)</regex>
-			<regex>(?&lt;![\d\w])(?i)(-webkit-margin-bottom-collapse)</regex>
-			<regex>(?&lt;![\d\w])(?i)(-webkit-margin-collapse)</regex>
-			<regex>(?&lt;![\d\w])(?i)(-webkit-margin-start)</regex>
-			<regex>(?&lt;![\d\w])(?i)(-webkit-margin-top-collapse)</regex>
-			<regex>(?&lt;![\d\w])(?i)(-webkit-marquee)</regex>
-			<regex>(?&lt;![\d\w])(?i)(-webkit-marquee-direction)</regex>
-			<regex>(?&lt;![\d\w])(?i)(-webkit-marquee-increment)</regex>
-			<regex>(?&lt;![\d\w])(?i)(-webkit-marquee-repetition)</regex>
-			<regex>(?&lt;![\d\w])(?i)(-webkit-marquee-speed)</regex>
-			<regex>(?&lt;![\d\w])(?i)(-webkit-marquee-style)</regex>
-			<regex>(?&lt;![\d\w])(?i)(-webkit-match-nearest-mail-blockquote-color)</regex>
-			<regex>(?&lt;![\d\w])(?i)(-webkit-nbsp-mode)</regex>
-			<regex>(?&lt;![\d\w])(?i)(-webkit-padding-start)</regex>
-			<regex>(?&lt;![\d\w])(?i)(-webkit-rtl-ordering)</regex>
-			<regex>(?&lt;![\d\w])(?i)(-webkit-text-decorations-in-effect)</regex>
-			<regex>(?&lt;![\d\w])(?i)(-webkit-text-fill-color)</regex>
-			<regex>(?&lt;![\d\w])(?i)(-webkit-text-security)</regex>
-			<regex>(?&lt;![\d\w])(?i)(-webkit-text-size-adjust)</regex>
-			<regex>(?&lt;![\d\w])(?i)(-webkit-text-stroke)</regex>
-			<regex>(?&lt;![\d\w])(?i)(-webkit-text-stroke-color)</regex>
-			<regex>(?&lt;![\d\w])(?i)(-webkit-text-stroke-width)</regex>
-			<regex>(?&lt;![\d\w])(?i)(-webkit-user-drag)</regex>
-			<regex>(?&lt;![\d\w])(?i)(-webkit-user-modify)</regex>
-			<regex>(?&lt;![\d\w])(?i)(-webkit-user-select)</regex>
-			<regex>(?&lt;![\d\w])(?i)(-webkit-user-modify)</regex>
+			<regex>(?&lt;![\d\w])(?i)(-(?:webkit|moz)-[a-z-]*)</regex>
 
 		</keywords>
 
@@ -344,12 +253,7 @@
 	
 	
 	
-	<state id="URL" type="string" color="#760f15" font-weight="normal" font-style="normal">
-
-		<begin><string>(?i)(?&lt;=url)\s*\(</string></begin>
-		<end><regex>\)</regex></end>
-
-	</state>
+	
 		
 		
 		
@@ -363,6 +267,12 @@
 		<keywords id="LESS Variables" color="#ba4747" useforautcomplete="no">
 
 			<regex>(@[\w\-]+\b)</regex>
+
+		</keywords>
+		
+		<keywords id="LESS Operators" color="#4068AB" useforautocomplete="no">
+
+			<regex>(\+|\-|\/|\*)</regex>
 
 		</keywords>
 
@@ -723,14 +633,6 @@
 			
 		</keywords>
 
-
-		<keywords id="LESS Operators" color="#4068AB" useforautocomplete="no">
-
-			<regex>(\+|\-|\/|\*)</regex>
-
-		</keywords>
-
-
 		<keywords id="LESS Digits" color="#00f" font-style="normal" useforautocomplete="yes">
 
 			<regex>(?&lt;![#\d\w])((?:(?:-?\.\d+)|(?:-?\d+\.\d+)|(?:-?\d+))(?:s|px|pt|em|ex|cm|in|mm|pc|%)?)</regex>
@@ -753,6 +655,13 @@
 		<state-link state="SingleComment"/>
 		<state-link state="String"/>
 		<state-link state="SingleString"/>
+		
+		<state id="URL" type="string" color="#760f15" font-weight="normal" font-style="normal">
+
+			<begin><string>(?i)(?&lt;=url)\s*\(</string></begin>
+			<end><regex>\)</regex></end>
+	
+		</state>
 
 	</state>
 	
