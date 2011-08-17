@@ -23,7 +23,7 @@
 
 	<symbol id="Variables" image="SymbolV">
 
-		<regex>(?&lt;=[\n\r\t])@([\w-]+)</regex>
+		<regex>(@[\w-]+)\s*(?=:)</regex>
 		
 		<postprocess>
 
